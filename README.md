@@ -5,6 +5,7 @@ This is a REST API implementation for Radiology Nuance PowerScribe 360 dictation
 ## Installation
 
 1. Import nuget to your project
+
 [https://www.nuget.org/packages/PowerScribe360Api/](https://www.nuget.org/packages/PowerScribe360Api/)
 ```
 Install-Package PowerScribe360Api -Version 1.0.0
@@ -12,7 +13,8 @@ Install-Package PowerScribe360Api -Version 1.0.0
 
 2. Clone GitHub code
 ```
-cd folder/to/clone-into/ git clone https://github.com/amin2997/PowerScribe360API.git
+cd folder/to/clone-into/ 
+git clone https://github.com/amin2997/PowerScribe360API.git
 ```
 3. Download GitHub Zip
 https://codeload.github.com/amin2997/PowerScribe360API/zip/master
