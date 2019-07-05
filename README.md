@@ -22,38 +22,32 @@ https://codeload.github.com/amin2997/PowerScribe360API/zip/master
 
 The following will allow you to connect to PowerScribe 360 server and send custom field to the radiologist report.
 ```
-static class Program
+static void Main()
+{
+	using(PowerScribe360Api.Powerscribe ps360 = new PowerScribe360Api.Powerscribe("http://ps360/RadPortal"))
 	{
-		/// <summary>
-		/// Sample console application to connect into PS360 server and send CT radiation dose for exam with accession number 123456.
-		/// </summary>
-		
-		static void Main()
+		if(ps360.SignIn("username", "***password***"))
 		{
-			using(PowerScribe360Api.Powerscribe ps360 = new PowerScribe360Api.Powerscribe("http://ps360/RadPortal"))
+			Console.WriteLine("Connectd to PS360 server");
+
+			if(ps360.SetCustomField("123546", "CT_RAD_DOSE", "501"))
 			{
-				if(ps360.SignIn("username", "***password***"))
-				{
-					Console.WriteLine("Connectd to PS360 server");
-
-					if(ps360.SetCustomField("123546", "CT_RAD_DOSE", "501"))
-					{
-						Console.WriteLine("Data was sent successfully to PS360");
-					}
-					else
-					{
-						Console.WriteLine("Error sending data to PS360");
-					}
-
-					ps360.SignOut();
-				}
-				else
-				{
-					Console.WriteLine("Error Unable  to connect to PS360 Server.");
-				}				
+				Console.WriteLine("Data was sent successfully to PS360");
 			}
-		}		
+			else
+			{
+				Console.WriteLine("Error sending data to PS360");
+			}
+
+			ps360.SignOut();
+		}
+		else
+		{
+			Console.WriteLine("Error Unable  to connect to PS360 Server.");
+		}				
 	}
+}		
+	
 ```
 
 For further details please refer to the test file and sample application.
