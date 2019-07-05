@@ -5,11 +5,10 @@
     <version>1.0.0</version>
     <authors>Amin2997</authors>
     <owners>Amin2997</owners>
-    <license type="MIT"/>
+    <license type="expression">MIT</license>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <projectUrl>https://github.com/amin2997/PowerScribe360Api</projectUrl>
-    <iconUrl>https://github.com/amin2997/PowerScribe360Api/dictation.ico</iconUrl>
-    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <iconUrl>https://raw.githubusercontent.com/amin2997/PowerScribe360API/master/PowerScribe360API/dictation.ico</iconUrl>    
     <description>This is a REST API implementation for Radiology Nuance PowerScribe 360 dictation system. This API will allow you to send and retrieve data points into prebuilt custom fields that populates radiologist final report. For example, you can push radiation dose information into custom field that will populate the radiologist final report.</description>
     <releaseNotes>none</releaseNotes>
     <copyright>Copyright 2019</copyright>
@@ -17,5 +16,19 @@
     <dependencies>
       <dependency id="System.Net.Http" version="4.0.0.0" />
     </dependencies>
+    <frameworkAssemblies>
+      <frameworkAssembly assemblyName="System.Xml" targetFramework="net40" />
+      <frameworkAssembly assemblyName="System.Xml.Linq" targetFramework="net40" />
+    </frameworkAssemblies>
+
   </metadata>
+
+  <files>
+    <file src="PowerScribe360Api\Powerscribe.cs"                target="content\PowerScribe360Api\Powerscribe.cs" />
+    <file src="PowerScribe360Api\PowerscribeHttpClient.cs"      target="content\PowerScribe360Api\PowerscribeHttpClient.cs" />
+    <file src="PowerScribe360Api\XmlObjects\XmlDeserialize.cs"  target="content\PowerScribe360Api\XmlObjects\XmlDeserialize.cs" />
+    <file src="PowerScribe360Api\XmlObjects\Report.cs"          target="content\PowerScribe360Api\XmlObjects\Report.cs" />
+    <file src="PowerScribe360Api\XmlObjects\OrderData.cs"       target="content\PowerScribe360Api\XmlObjects\OrderData.cs" />
+    
+  </files>
 </package>
