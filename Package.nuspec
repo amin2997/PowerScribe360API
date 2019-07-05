@@ -7,8 +7,8 @@
     <owners>Amin2997</owners>
     <license type="MIT"/>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <projectUrl>http://PROJECT_URL_HERE_OR_DELETE_THIS_LINE</projectUrl>
-    <iconUrl>http://ICON_URL_HERE_OR_DELETE_THIS_LINE</iconUrl>
+    <projectUrl>https://github.com/amin2997/PowerScribe360Api</projectUrl>
+    <iconUrl>https://github.com/amin2997/PowerScribe360Api/dictation.ico</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>This is a REST API implementation for Radiology Nuance PowerScribe 360 dictation system. This API will allow you to send and retrieve data points into prebuilt custom fields that populates radiologist final report. For example, you can push radiation dose information into custom field that will populate the radiologist final report.</description>
     <releaseNotes>none</releaseNotes>
