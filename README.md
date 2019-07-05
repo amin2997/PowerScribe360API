@@ -22,7 +22,6 @@ https://codeload.github.com/amin2997/PowerScribe360API/zip/master
 
 The following will allow you to connect to PowerScribe 360 server and send custom field to the radiologist report.
 ```
-    ```csharp
 static class Program
 	{
 		/// <summary>
@@ -55,7 +54,6 @@ static class Program
 			}
 		}		
 	}
-    ```
 ```
 
 For further details please refer to the test file and sample application.
