@@ -24,7 +24,7 @@ https://codeload.github.com/amin2997/PowerScribe360API/zip/master
 ## Sample Implementation
 
 The following will allow you to connect to PowerScribe 360 server and send custom field to the radiologist report.
-```
+``` csharp
 static void Main()
 {
 	using(PowerScribe360Api.Powerscribe ps360 = new PowerScribe360Api.Powerscribe("http://ps360/RadPortal"))
