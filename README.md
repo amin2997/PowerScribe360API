@@ -32,8 +32,12 @@ static void Main()
 		if(ps360.SignIn("username", "***password***"))
 		{
 			Console.WriteLine("Connectd to PS360 server");
-
-			if(ps360.SetCustomField("123546", "CT_RAD_DOSE", "501"))
+			
+			string accessionNumber = "123546";
+			string customFieldName = "CT_RAD_DOSE";
+			string customFieldValue = "501";
+			
+			if(ps360.SetCustomField(accessionNumber, customFieldName, customFieldValue))
 			{
 				Console.WriteLine("Data was sent successfully to PS360");
 			}
